@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_profile"
+    tools:context=".activities.profileChangeActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/change_profile_image"
+        android:layout_width="180dp"
+        android:layout_height="144dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mypic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="394dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_profile_image"
+        app:layout_constraintVertical_bias="0.965">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/borderblack"
+            android:padding="10dp"
+            android:text="UserName" />
+
+        <EditText
+            android:id="@+id/changeUserName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/borderblack"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:background="@drawable/borderblack"
+            android:padding="10dp"
+            android:text="Profession" />
+
+        <EditText
+            android:id="@+id/changeProfession"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/borderblack"
+            android:ems="10"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/updateDetailsBtn"
+            android:layout_width="250dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Update "
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
